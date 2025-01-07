@@ -1,0 +1,11 @@
+Bold italic
+Bold
+
+SemiBold italic
+
+Medium
+
+Regular
+Regular italic
+
+Light

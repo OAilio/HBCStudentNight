@@ -1,0 +1,54 @@
+// Fonts -----------------------------------------------------------
+@font-face { font-family: 'Libre Franklin Bold'; src: url("../../fonts/LibreFranklin-Bold.ttf");}
+@font-face { font-family: 'Libre Franklin Bold Italic'; src: url("../../fonts/LibreFranklin-BoldItalic.ttf");}
+@font-face { font-family: 'Libre Franklin SemiBold Italic'; src: url("../../fonts/LibreFranklin-SemiBoldItalic.ttf");}
+@font-face { font-family: 'Libre Franklin Medium'; src: url("../../fonts/LibreFranklin-Medium.ttf");}
+@font-face { font-family: 'Libre Franklin Italic'; src: url("../../fonts/LibreFranklin-Italic.ttf");}
+@font-face { font-family: 'Libre Franklin Regular'; src: url("../../fonts/LibreFranklin-Regular.ttf");}
+@font-face { font-family: 'Libre Franklin Light'; src: url("../../fonts/LibreFranklin-Light.ttf");}
+
+$bold: 'Libre Franklin Bold';
+$boldItalic: 'Libre Franklin Bold Italic';
+$semiBoldItalic: 'Libre Franklin SemiBold Italic';
+$medium: 'Libre Franklin Medium';
+$italic: 'Libre Franklin Italic';
+$regular: 'Libre Franklin Regular';
+$light: 'Libre Franklin Light';
+
+// Font sizes
+$heading: 1.5rem;
+$subheading: 1.25rem;
+$body: 1rem;
+$small: 0.875rem;
+
+//----------------------------------------------
+
+// Colors
+
+$primary: rgba(15, 61, 118);
+$secondary: rgba(15, 61, 118);
+$black: rgba(32, 23, 22);
+$white: rgba(254, 252, 252);
+
+//----------------------------------------------
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    font-size: $heading;
+    font-family: $boldItalic;
+    color: $primary;
+}
+
+h2 {
+    font-size: $subheading;
+    font-family: $semiBoldItalic;
+}
+
+P {
+    font-size: $body;
+    font-family: $regular;
+}
