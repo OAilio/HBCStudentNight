@@ -1,0 +1,164 @@
+@use "./_shared" as *;
+
+// Base styles (mobile-first)
+nav {
+  font-family: $semiBoldItalic;
+  font-size: $subheading;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: $primary;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 1s ease;
+  text-decoration: none;
+
+  .navbar-logo a {
+    display: flex;
+    align-items: center;
+    color: $secondary;
+    margin: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    h2 {
+        margin-left: 0.5rem;
+    }
+  }
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  margin-top: 3.5rem;
+  padding: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.25s ease-in;
+  background-color: $primary;
+  max-width: 60%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+
+  &.open {
+    transform: translateX(0);
+  }
+}
+
+nav ul li {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: $white;
+  margin: 0.5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+nav ul li a:hover,
+nav .navbar-logo a:hover {
+  transform: scale(1.2);
+}
+
+// Burger menu for toggling navigation
+.burger-menu {
+  display: flex;
+  width: 30px;
+  height: 10px;
+  position: absolute;
+  right: 1rem;
+  margin: 1.55rem 0.3rem;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: $secondary;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+
+    &:nth-child(2) {
+      top: 9px;
+    }
+
+    &:nth-child(3) {
+      top: 18px;
+    }
+  }
+
+  &.open span:nth-child(1) {
+    top: 9px;
+    transform: rotate(135deg);
+  }
+
+  &.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+
+  &.open span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-135deg);
+  }
+}
+
+// Traditional navbar for larger screens
+@media screen and (min-width: 1145px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    transform: translateX(0);
+    width: auto;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    width: auto;
+    text-align: left;
+    padding: 0;
+  }
+
+  nav ul li a {
+    margin: 0 2rem;
+  }
+
+  nav .navbar-logo a {
+    margin: 1rem 1rem 1rem 2rem;
+  }
+}

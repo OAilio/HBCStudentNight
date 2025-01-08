@@ -1,14 +1,27 @@
-import "./styles/_shared.scss"
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'
+import Home from "./components/Home"
+import Club from './components/Club';
+import Rosters from './components/Rosters';
+import Preview from './components/Preview';
+import AfterParty from './components/AfterParty';
 
-const App = () => (
-  <div>
-    <h1>WELCOME TO THE GAME PROGRAMME OF HBC STUDENT NIGHT 2025!</h1>
-    <p>Get ready for an electrifying night of basketball as [Team A] takes on [Team B] 
-      in a showdown of skill, determination, and team spirit! Whether you’re here to 
-      cheer for your favorite players, enjoy the energy of the game, or experience the 
-      thrill of live basketball, we’re excited to have you with us.</p>
-    <h2>WE WISH TO THANK</h2>
-  </div>
-)
+function NotFound() {
+  return <h1>404 - Page Not Found</h1>;
+}
+
+function App() {
+  return (
+    <><Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/club" element={<Club />} />
+      <Route path="/rosters" element={<Rosters />} />
+      <Route path="/preview" element={<Preview />} />
+      <Route path="/afterparty" element={<AfterParty />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes></>
+  );
+}
 
 export default App

@@ -1,0 +1,10 @@
+@use "./_shared" as *;
+
+.home {
+    @include mobile-container;
+
+    h1 {
+        // background-color: rebeccapurple;
+        margin-bottom: 1rem;
+    }
+}

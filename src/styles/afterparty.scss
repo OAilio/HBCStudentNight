@@ -1,0 +1,9 @@
+@use "./_shared" as *;
+
+.afterparty {
+    @include mobile-container;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+}

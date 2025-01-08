@@ -1,0 +1,5 @@
+@use "./_shared" as *;
+
+.club {
+    @include mobile-container;
+}

@@ -1,0 +1,9 @@
+@use "./_shared" as *;
+
+.preview {
+    @include mobile-container;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+}
