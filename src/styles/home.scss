@@ -1,10 +1,134 @@
 @use "./_shared" as *;
 
+.carousel {
+    margin-top: 4rem;
+
+    & .carousel-slide {
+        width: 100%;
+
+        @media screen and (min-width: 992px) {
+            max-height: 12rem;
+        }
+    
+        @media screen and (min-width: 1145px) {
+            max-height: 22rem
+        }
+    }
+}
+
 .home {
     @include mobile-container;
+    & {margin-top: 1rem;}
 
     h1 {
-        // background-color: rebeccapurple;
         margin-bottom: 1rem;
+    }
+
+    & .cardgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        text-decoration: none;
+
+        & .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.25rem;
+            height: 9rem;
+            font-family: $semiBoldItalic;
+            font-size: $subheading;
+            color: $black;
+            list-style-type: none;
+            text-decoration: none;
+            box-shadow: 0 0 5.8px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            
+
+            & .icon {
+                height: 4rem;
+                color: $primary;
+            }
+
+            &:active {
+                transition: 0.3s ease;
+                transform: scale(0.9);
+                border: 4px solid $primary;
+                background-color: $lightgrey
+            }
+        }
+    }
+
+    &.thanks {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2rem;
+
+        & .partners {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem auto;
+            gap: 1rem;
+        }
+    }
+}
+
+.socials {
+    max-width: 100%;
+    padding: 2rem 0rem;
+    background-color: $highlight;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+
+    & .icons {
+        display: flex;
+        margin: 1rem auto;
+        gap: 2rem;
+        color: $primary;
+        font-size: 4rem;
+
+        & a {
+            text-decoration: none;
+            color: inherit;
+            padding: 0;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: transform ease 0.3s;
+            }
+
+            &:active {
+                transform: scale(0.9);
+                transition: transform ease 0.3s;
+                color: $lightgrey
+            }
+        }
+    }
+
+    & .tags {
+        margin: 0.125rem auto 0rem;
+        font-size: $subheading;
+        font-family: $bold;
+        color: $primary;
+    }
+
+    @media screen and (min-width: 992px) {
+        max-width: 60%;
+        border-radius: 16px;
+    }
+
+    @media screen and (min-width: 1145px) {
+        max-width: 50%;
+    }
+
+    @media screen and (min-width: 1400px) {
+        max-width: 60rem;
     }
 }

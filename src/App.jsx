@@ -5,6 +5,7 @@ import Club from './components/Club';
 import Rosters from './components/Rosters';
 import Preview from './components/Preview';
 import AfterParty from './components/AfterParty';
+import Footer from './components/Footer';
 
 function NotFound() {
   return <h1>404 - Page Not Found</h1>;
@@ -12,7 +13,8 @@ function NotFound() {
 
 function App() {
   return (
-    <><Navbar />
+    <>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/club" element={<Club />} />
@@ -20,7 +22,9 @@ function App() {
       <Route path="/preview" element={<Preview />} />
       <Route path="/afterparty" element={<AfterParty />} />
       <Route path="*" element={<NotFound />} />
-    </Routes></>
+    </Routes>
+    <Footer />
+    </>
   );
 }
 

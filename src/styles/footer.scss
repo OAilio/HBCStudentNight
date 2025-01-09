@@ -1,0 +1,58 @@
+@use "./_shared" as *;
+
+.footer {
+    padding: 2rem 0rem;
+    margin-top: 8rem;
+    background-color: $black;
+    color: $white;
+    font-size: $body;
+    font-family: $thin;
+    width: 100%;
+    bottom: 1;
+    position: absolute;
+
+    & .content {
+        @include mobile-container;
+        & {margin-top: 0};
+        & {align-items: start};
+
+        & .icons {
+            display: flex;
+            margin: 1rem 0rem;
+            gap: 1rem;
+            font-size: 2.5rem;
+
+            & a {
+                color: inherit;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    transition: transform ease 0.3s;
+                }
+    
+                &:active {
+                    transform: scale(0.9);
+                    transition: transform ease 0.3s;
+                    color: $secondary
+                }
+            }
+        }
+        
+        & a {
+            color: $white;
+        }
+    }
+
+    .credit {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        font-size: $small;
+        font-family: $thin;
+
+        & a {
+            font-size: $small;
+            color: $white;
+        }
+    }
+}

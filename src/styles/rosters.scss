@@ -2,4 +2,91 @@
 
 .rosters {
     @include mobile-container;
+
+    & .hometeam, .awayteam {
+        & .title {
+            margin: 2rem 0rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        & .players {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            margin-bottom: 2rem;
+
+            & .playercard {
+                border-radius: 16px;
+                margin-bottom: 5%;
+
+                & h3.long {
+                    font-size: $small;
+                }
+
+                & .image-container {
+                    position: relative;
+                    display: inline-block;
+
+                    & .image {
+                        width: 10rem;
+                        border-radius: 8px 8px 0px 0px;
+                    } 
+
+                    & .player-number {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        background-color: $primary;
+                        color: $white;
+                        margin-bottom: 0.25rem;
+                        padding-bottom: 0.5rem;
+                        padding-right: 0.5rem;
+                        width: 2.5rem;
+                        height: 2.25rem;
+                        font-size: $body;
+                        font-family: $bold;
+                        display: flex;
+                        justify-content: end;
+                        align-items: end;
+                        border-top-left-radius: 100%;
+                        border: 4px solid $secondary;
+                        border-right: none;
+                        border-bottom: none;
+                      }
+                }
+
+            }
+
+            @media screen and (min-width: 992px) {
+                gap: 1rem 2rem;
+            }
+        }
+    }
+
+    & .awayteam {
+        .players {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+          
+            & .player {
+                display: flex;
+                justify-content: flex-start;
+                gap: 1rem;
+
+                & h3 {
+                    margin: 0;
+                }
+
+                & .number {
+                    width: 2rem;
+                    text-align: right;
+                  }
+              }
+        }
+          
+    }
+
 }
