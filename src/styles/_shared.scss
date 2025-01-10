@@ -31,6 +31,8 @@ $highlight: rgba(246, 235, 135);
 $black: rgba(32, 23, 22);
 $white: rgba(254, 252, 252);
 $lightgrey: rgba(246, 239, 239);
+$red: rgba(206, 24, 24);
+$green: rgba(19, 203, 19);
 
 //----------------------------------------------
 
@@ -62,6 +64,11 @@ h3 {
     margin: 0.25rem 0rem 0rem;
 }
 
+h4 {
+    font-size: $subheading;
+    font-family: $medium;
+}
+
 p {
     font-size: $body;
     font-family: $regular;
@@ -79,10 +86,30 @@ p {
     }
 
     @media screen and (min-width: 1145px) {
-        max-width: 50%;
+        max-width: 40%;
     }
 
-    @media screen and (min-width: 1400px) {
-        max-width: 60rem;
+    @media screen and (min-width: 1300px) {
+        max-width: 50rem;
+    }
+}
+
+@mixin full-width-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+
+    @media screen and (min-width: 992px) {
+        max-width: 60%;
+    }
+
+    @media screen and (min-width: 1145px) {
+        max-width: 40%;
+    }
+
+    @media screen and (min-width: 1300px) {
+        max-width: 50rem;
     }
 }

@@ -37,10 +37,6 @@
                 }
             }
         }
-        
-        & a {
-            color: $white;
-        }
     }
 
     .credit {
@@ -52,7 +48,19 @@
 
         & a {
             font-size: $small;
-            color: $white;
+        }
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $highlight;
+            transition: color 0.3s ease, transition 0.3s ease;
+        }
+
+        &:active {
+            color: $secondary;
         }
     }
 }

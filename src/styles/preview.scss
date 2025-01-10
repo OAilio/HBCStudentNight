@@ -4,6 +4,207 @@
     @include mobile-container;
 
     h1 {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    & .form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1rem 0rem 2rem;
+
+
+        & .team {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+
+            & .record {
+                margin: 0;
+                font-family: $italic;
+                font-size: $subheading;
+            }
+        }
+
+        & .last-five-container {
+            display: flex;
+            flex-direction: column;
+            max-width: fit-content;
+
+            & h4 {
+                margin: 0.5rem 0rem;
+            }
+    
+            & .last-five {
+                border: 4px solid $secondary;
+                border-radius: 1rem;
+                display: flex;
+                margin-bottom: 2rem;
+                width: fit-content;
+                align-items: center;
+
+                & .tags {
+                    display: flex;
+                    margin: 1rem;
+                    flex-direction: row;
+                    gap: 1rem;
+    
+                    & .L, .W {
+                        font-family: $bold;
+                        font-size: $subheading;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $white;
+                        border-radius: 100%;
+                    }
+    
+                    & .W {
+                        background-color: $green;
+                    }
+    
+                    & .L {
+                        background-color: $red;
+                    }
+                }
+            }
+        }
+
+        & .info {
+            font-family: $italic;
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 0rem 4rem;
+
+            .last-five-container {
+
+                & .last-five {
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+}
+
+.previousresults {
+    @include full-width-container;
+    padding: 2rem 0rem;
+
+    & .game {
+        padding: 1rem 0rem;
+
+        &.odd {
+            background-color: $lightgrey;
+        }
+
+        &.even {
+            background-color: transparent;
+        }
+    }
+
+    & .more {
+        margin: 1rem 0rem 0rem 1rem;
+        text-align: left;
+
+        & a {
+            color: $primary;
+            margin-left: 0.25rem;
+        
+            &:hover {
+                color: $highlight;
+                transition: color 0.3s ease, transition 0.3s ease;
+            }
+    
+            &:active {
+                color: $secondary;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: 0;
+        }
+    }
+}
+
+.versus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 1rem;
+
+    & .vs {
+        font-family: $bold;
+        font-size: $subheading;
+        margin: 0rem 1rem;
+    }
+
+    & .logo-wrapper {
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .icon {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .logo-wrapper {
+            width: 8rem;
+            height: 8rem;
+
+            & .icon {
+                height: 6rem;
+            }
+        }
+    }
+}
+
+.comments {
+    @include mobile-container;
+    & {margin-top: 4rem;}
+
+    & .quote {
+        margin-top: 1rem;
+        border: 4px solid $secondary;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16PX;
+
+        & .mark {
+            width: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        & q {
+            quotes: none;
+            font-family: $regular;
+        }
+
+        & .citation {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            font-size: $body;
+            font-family: $medium;
+            
+            & .name {
+                font-family: $semiBoldItalic;
+            }
+        }
     }
 }
