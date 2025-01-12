@@ -4,8 +4,8 @@ const Preview = () => {
   const teams = [
     {
       name: "HBC CURRENTUS",
-      record: "6W 1L (4TH)",
-      lastfive: ["W", "W", "W", "W", "W"]
+      record: "6W 2L (4TH)",
+      lastfive: ["W", "W", "W", "W", "L"]
     },
     {
       name: "TUTO",
@@ -51,13 +51,13 @@ const Preview = () => {
 
   const comments = [
     {
-      quote: "Facing TuTo, we anticipate a high-intensity matchup. They're disciplined and excel in transition. Our focus will be on controlling the boards, limiting turnovers, and executing defensively. Staying composed under pressure will be key to securing the win.",
+      quote: "A long waited rematch for Currentus. TuTo plays physical basketball, relying on their star players, whose stopping is key for us. The winner will be the team that controls the tempo and is able to follow their concept better. It's going to be a great event, let's hope we can fill the arena!",
       name: "JUSSI TAMMINEN",
       title: "Head Coach, HBC Currentus"
     },
     {
-      quote: "Facing TuTo, we anticipate a high-intensity matchup. They're disciplined and excel in transition. Our focus will be on controlling the boards, limiting turnovers, and executing defensively. Staying composed under pressure will be key to securing the win.",
-      name: "TAME JUSSINEN",
+      quote: "Currentus is a young team with a lot of induvidual talent and size. The previous games against 'Curres' have been even, low-scoring games. The golden trophy will be lifted on Thursday by the team that is able to stay focused the whole 40 minutes.",
+      name: "ALEXANDER HENRIKSSON",
       title: "Head Coach, TuTo"
     }
   ]

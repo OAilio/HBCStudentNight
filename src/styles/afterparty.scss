@@ -4,6 +4,61 @@
     @include mobile-container;
 
     h1 {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    & .partyinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & .doris {
+            height: 6rem;
+            margin: 2rem 0rem 1rem;
+        }
+
+        & p {
+            margin-bottom: 2rem;
+        }
+
+        & span {
+            font-family: $semiBoldItalic;
+            font-size: $subheading;
+        }
+
+        & .map {
+            width: 18rem;
+            height: 18rem;
+            margin: 2rem 0rem 4rem;
+
+            & iframe {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                border-radius: 16px;
+                border: solid $primary 4px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .map {
+                width: 100%;
+                height: 30rem;
+            }
+        }
+    
+        @media screen and (min-width: 1145px) {
+            .doris {
+                height: 8rem;
+                margin: 2rem 0rem 1rem;
+            }
+            
+        }
+    }
+
+    & .info {
+        font-family: $italic;
+        text-align: left;
     }
 }

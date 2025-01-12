@@ -86,7 +86,7 @@ p {
     }
 
     @media screen and (min-width: 1145px) {
-        max-width: 40%;
+        max-width: 45%;
     }
 
     @media screen and (min-width: 1300px) {
@@ -106,10 +106,24 @@ p {
     }
 
     @media screen and (min-width: 1145px) {
-        max-width: 40%;
+        max-width: 45%;
     }
 
     @media screen and (min-width: 1300px) {
         max-width: 50rem;
+    }
+}
+
+@mixin text-link {
+    color: $primary;
+    margin-left: 0.25rem;
+
+    &:hover {
+        color: $highlight;
+        transition: color 0.3s ease, transition 0.3s ease;
+    }
+
+    &:active {
+        color: $secondary;
     }
 }

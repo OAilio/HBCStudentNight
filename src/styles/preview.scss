@@ -95,7 +95,7 @@
 
 .previousresults {
     @include full-width-container;
-    padding: 2rem 0rem;
+    & {padding: 2rem 0rem;}
 
     & .game {
         padding: 1rem 0rem;
@@ -114,17 +114,8 @@
         text-align: left;
 
         & a {
-            color: $primary;
-            margin-left: 0.25rem;
-        
-            &:hover {
-                color: $highlight;
-                transition: color 0.3s ease, transition 0.3s ease;
-            }
-    
-            &:active {
-                color: $secondary;
-            }
+            @include text-link;
+            & {margin-left: 0.25rem;}
         }
 
         @media screen and (min-width: 768px) {

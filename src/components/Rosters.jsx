@@ -36,7 +36,7 @@ const Rosters = () => {
               return (
                 <div key={player.number} className="playercard">
                   <div className="image-container">
-                    <img src={player.image} alt={player.name} className="image" />
+                    <img src={player.image} alt={player.name} className="image" loading="lazy"/>
                     <p className="player-number">#{player.number}</p>
                   </div>
                   <h3 className={player.type}>{player.name}</h3>

@@ -26,28 +26,29 @@ const Home = () => {
     <div className="home">
       <h1>WELCOME TO THE GAME PROGRAMME OF HBC STUDENT NIGHT 2025!</h1>
       <p>
-        Get ready for an electrifying night of basketball as [Team A] takes on [Team B]
-        in a showdown of skill, determination, and team spirit! Whether you’re here to
-        cheer for your favorite players, enjoy the energy of the game, or experience the
-        thrill of live basketball, we’re excited to have you with us.
+        We&apos;re so happy to have you. Here you&apos;ll find all necessary information regarding tonight&apos;s game
+        and the awesome event surronding it! Get ready for an electric match-up, as Turku&apos;s very own student basketball team
+        HBC Currentus takes on a local rival, TuTo!
+        <br/><br/>
+        Enjoy the show!
       </p>
       <section className="cardgrid">
-      <Link to="/club" className="card">
-        <img src={"/hbclogo2.svg"} alt="HBC logo" className="icon"/>
-        <div>THE CLUB</div>
-      </Link>
-      <Link to="/rosters" className="card" >
-        <img src={"/jerseyiconwhite.svg"} alt="Basketball jersey" className="icon"/>
-        <div>ROSTERS</div>
-      </Link>
-      <Link to="/preview" className="card">
-        <FontAwesomeIcon icon={faCommentDots}  className="icon"/>
-        <div>PREVIEW</div>
-      </Link>
-      <Link to="/afterparty" className="card">
-      <img src={"/discoball.svg"} alt="Basketball jersey" className="icon"/>
-        <div>AFTER PARTY</div>
-      </Link>
+        <Link to="/club" className="card">
+          <img src={"/hbclogo2.svg"} alt="HBC logo" className="icon"/>
+          <div>THE CLUB</div>
+        </Link>
+        <Link to="/rosters" className="card" >
+          <img src={"/jerseyiconwhite.svg"} alt="Basketball jersey" className="icon"/>
+          <div>ROSTERS</div>
+        </Link>
+        <Link to="/preview" className="card">
+          <FontAwesomeIcon icon={faCommentDots}  className="icon"/>
+          <div>PREVIEW</div>
+        </Link>
+        <Link to="/afterparty" className="card">
+        <img src={"/discoball.svg"} alt="Basketball jersey" className="icon"/>
+          <div>AFTER PARTY</div>
+        </Link>
       </section>
     </div>
     <div className="socials">
