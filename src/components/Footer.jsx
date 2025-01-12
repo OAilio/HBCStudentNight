@@ -21,7 +21,7 @@ const Footer = () => {
             <a href="https://www.hunksbasketball.fi/">www.hunksbasketball.fi (FI)</a>
         </div>
         <div className="credit">
-            <div>Created by <a className="link" href="https://www.okkoailio.fi/">Okko Ailio</a></div>
+            <span>Created by <a className="link" href="https://www.okkoailio.fi/">Okko Ailio</a></span>
         </div>
     </div>
   )

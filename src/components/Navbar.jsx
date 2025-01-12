@@ -9,13 +9,12 @@ function Navbar() {
     setIsOpen(false);
   };
 
-
   return (
     <>
       <nav>
         <div className="navbar-logo">
           <Link onClick={closeMenu} to="/">
-            <img src={"/hbclogo1.svg"} alt="HBC logo" className="icon" />
+            <img src={"/hbclogo1.svg"} alt="HBC logo" className="icon"/>
             <h2>STUDENT NIGHT</h2>
           </Link>
         </div>
@@ -49,5 +48,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

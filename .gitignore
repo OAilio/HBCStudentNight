@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-currentus.csv
-tuto.csv
+src/data/awayRoster.json
+src/data/homeRoster.json

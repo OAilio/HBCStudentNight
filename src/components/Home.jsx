@@ -1,27 +1,33 @@
 import "../styles/home.scss"
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from "@fortawesome/free-regular-svg-icons";
 import { faSquareInstagram, faSquareXTwitter, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
+import sliderImages from "../data/sliderImages";
 
 
 const Home = () => {
   return (
     <>
-    <Carousel className="carousel" infiniteLoop={true}
-      interval={4000} autoPlay={true} showThumbs={false} showStatus={false}
-      showIndicators={false} showArrows={false} swipeable>
-      <div className="carousel-slide">
-        <img src={"/carousel1.svg"} alt="" />
-      </div>
-      <div className="carousel-slide">
-        <img src={"/carousel2.svg"} alt="" />
-      </div>
-      <div className="carousel-slide">
-        <img src={"/carousel3.svg"} alt="" />
-      </div>
+    <Carousel
+      className="carousel"
+      infiniteLoop={true}
+      interval={4000}
+      autoPlay={true}
+      showThumbs={false}
+      showStatus={false}
+      showIndicators={false}
+      showArrows={false}
+      swipeable
+    >
+      {sliderImages.map((slide, index) => (
+        <div key={index} className="slide">
+          <img src={slide.url} alt="" loading="lazy"/>
+          <p className="credit">{slide.credit}</p>
+        </div>
+      ))}
     </Carousel>
     <div className="home">
       <h1>WELCOME TO THE GAME PROGRAMME OF HBC STUDENT NIGHT 2025!</h1>
@@ -30,24 +36,24 @@ const Home = () => {
         and the awesome event surronding it! Get ready for an electric match-up, as Turku&apos;s very own student basketball team
         HBC Currentus takes on a local rival, TuTo!
         <br/><br/>
-        Enjoy the show!
+        Enjoy the show!&#128293;
       </p>
       <section className="cardgrid">
         <Link to="/club" className="card">
-          <img src={"/hbclogo2.svg"} alt="HBC logo" className="icon"/>
-          <div>THE CLUB</div>
+          <img src={"/hbclogo2.svg"} alt="HBC logo" className="icon" loading="lazy"/>
+          <span>THE CLUB</span>
         </Link>
         <Link to="/rosters" className="card" >
-          <img src={"/jerseyiconwhite.svg"} alt="Basketball jersey" className="icon"/>
-          <div>ROSTERS</div>
+          <img src={"/jerseyiconwhite.svg"} alt="Basketball jersey" className="icon" loading="lazy"/>
+          <span>ROSTERS</span>
         </Link>
         <Link to="/preview" className="card">
-          <FontAwesomeIcon icon={faCommentDots}  className="icon"/>
-          <div>PREVIEW</div>
+          <FontAwesomeIcon icon={faCommentDots}  className="icon" loading="lazy"/>
+          <span>PREVIEW</span>
         </Link>
         <Link to="/afterparty" className="card">
-        <img src={"/discoball.svg"} alt="Basketball jersey" className="icon"/>
-          <div>AFTER PARTY</div>
+        <img src={"/discoball.svg"} alt="Basketball jersey" className="icon" loading="lazy"/>
+          <span>AFTER PARTY</span>
         </Link>
       </section>
     </div>
@@ -66,8 +72,8 @@ const Home = () => {
       </div>
       <h2>Don&apos;t forget to tag us with</h2>
       <div className="tags">
-        <div>#HBCstudentnight</div>
-        <div>@hunksbasketball</div>
+        <span>#HBCstudentnight</span>
+        <span>@hunksbasketball</span>
       </div>
     </div>
     <div className="home thanks">

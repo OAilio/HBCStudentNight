@@ -1,32 +1,14 @@
 import "../styles/rosters.scss"
-import Papa from "papaparse";
-import { useState, useEffect } from "react";
+import homeRoster from "../data/homeRoster.json";
+import awayRoster from "../data/awayRoster.json";
 
 const Rosters = () => {
-  const [homeRoster, setHomeRoster] = useState([]);
-  const [awayRoster, setAwayRoster] = useState([]);
-
-  useEffect(() => {
-    fetch("/currentus.csv")
-      .then((response) => response.text())
-      .then((csv) => {
-        const parsed = Papa.parse(csv, { header: true });
-        setHomeRoster(parsed.data);
-      });
-    fetch("/tuto.csv")
-      .then((response) => response.text())
-      .then((csv) => {
-        const parsed = Papa.parse(csv, { header: true });
-        setAwayRoster(parsed.data);
-      });
-  }, []);
-
   return (
     <div className="rosters">
       <h1>ROSTERS</h1>
       <div className="hometeam">
         <div className="title">
-          <img src={"/currentus.svg"} alt="HBC Currentus logo" className="icon"/>
+          <img src={"/currentus.svg"} alt="HBC Currentus logo" className="icon" loading="lazy"/>
           <h2>HBC CURRENTUS</h2>
         </div>
         <div className="players">
@@ -50,7 +32,7 @@ const Rosters = () => {
       </div>
       <div className="awayteam">
         <div className="title">
-          <img src={"/tuto.svg"} alt="TuTo logo" className="icon"/>
+          <img src={"/tuto.svg"} alt="TuTo logo" className="icon" loading="lazy"/>
           <h2>TUTO</h2>
         </div>
         <div className="players">

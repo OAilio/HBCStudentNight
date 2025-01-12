@@ -3,18 +3,37 @@
 .carousel {
     margin-top: 4rem;
 
-    & .carousel-slide {
+    & .slide {
         width: 100%;
 
-        @media screen and (min-width: 992px) {
-            max-height: 12rem;
+        & img {
+            width: 100%;
+            height: auto;
         }
-    
-        @media screen and (min-width: 1145px) {
-            max-height: 22rem
+
+        & .credit {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            margin: 0;
+            padding: 0.25rem 0.5rem;
+            background: $primary;
+            color: $white;
+            font-size: $small;
+            border-radius: 0.25rem;
+            white-space: nowrap;
         }
     }
+
+    @media screen and (min-width: 992px) {
+        max-height: 20rem;
+    }
+
+    @media screen and (min-width: 1145px) {
+        max-height: 36rem
+    }
 }
+
 
 .home {
     @include mobile-container;
