@@ -9,12 +9,12 @@ const Rosters = () => {
     fetch("/data/homeRoster.json")
       .then((response) => response.json())
       .then((data) => setHomeRoster(data))
-      .catch((error) => console.error("Error loading currentus.json:", error));
+      .catch((error) => console.error("Error loading homeRoster.json:", error));
     
     fetch("/data/awayRoster.json")
       .then((response) => response.json())
       .then((data) => setAwayRoster(data))
-      .catch((error) => console.error("Error loading currentus.json:", error));
+      .catch((error) => console.error("Error loading homeRoster.json:", error));
   }, []);
   return (
     <div className="rosters">

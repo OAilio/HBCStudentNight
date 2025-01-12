@@ -7,20 +7,20 @@ const Preview = () => {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    fetch("/data/sliderImages.json")
+    fetch("/data/teams.json")
       .then((response) => response.json())
       .then((data) => setTeams(data))
-      .catch((error) => console.error("Error loading currentus.json:", error));
+      .catch((error) => console.error("Error loading teams.json:", error));
 
     fetch("/data/head2head.json")
       .then((response) => response.json())
       .then((data) => setHead2head(data))
-      .catch((error) => console.error("Error loading currentus.json:", error));
+      .catch((error) => console.error("Error loading head2head.json:", error));
 
     fetch("/data/comments.json")
       .then((response) => response.json())
       .then((data) => setComments(data))
-      .catch((error) => console.error("Error loading currentus.json:", error));
+      .catch((error) => console.error("Error loading comments.json:", error));
   }, []);
 
   return (

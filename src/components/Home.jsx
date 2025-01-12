@@ -15,7 +15,7 @@ const Home = () => {
     fetch("/data/sliderImages.json")
       .then((response) => response.json())
       .then((data) => setSliderImages(data))
-      .catch((error) => console.error("Error loading currentus.json:", error));
+      .catch((error) => console.error("Error loading sliderImages.json:", error));
   }, []);
   return (
     <>
