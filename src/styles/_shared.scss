@@ -51,27 +51,32 @@ h1 {
     font-size: $heading;
     font-family: $boldItalic;
     color: $primary;
+    font-weight: normal;
 }
 
 h2 {
     font-size: $subheading;
     font-family: $semiBoldItalic;
+    font-weight: normal;
 }
 
 h3 {
     font-size: $body;
     font-family: $semiBoldItalic;
     margin: 0.25rem 0rem 0rem;
+    font-weight: normal;
 }
 
 h4 {
     font-size: $subheading;
     font-family: $medium;
+    font-weight: normal;
 }
 
 p {
     font-size: $body;
     font-family: $regular;
+    font-weight: normal;
 }
 
 @mixin mobile-container {
