@@ -1,8 +1,21 @@
 import "../styles/rosters.scss"
-import homeRoster from "../data/homeRoster.json";
-import awayRoster from "../data/awayRoster.json";
+import { useState, useEffect } from "react";
 
 const Rosters = () => {
+  const [homeRoster, setHomeRoster] = useState([]);
+  const [awayRoster, setAwayRoster] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/homeRoster.json")
+      .then((response) => response.json())
+      .then((data) => setHomeRoster(data))
+      .catch((error) => console.error("Error loading currentus.json:", error));
+    
+    fetch("/data/awayRoster.json")
+      .then((response) => response.json())
+      .then((data) => setAwayRoster(data))
+      .catch((error) => console.error("Error loading currentus.json:", error));
+  }, []);
   return (
     <div className="rosters">
       <h1>ROSTERS</h1>

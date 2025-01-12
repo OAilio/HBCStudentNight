@@ -1,9 +1,28 @@
 import "../styles/preview.scss"
-import teams from "../data/teams";
-import head2head from "../data/head2head";
-import comments from "../data/comments"
+import { useState, useEffect } from "react";
 
 const Preview = () => {
+  const [teams, setTeams] = useState([]);
+  const [head2head, setHead2head] = useState([]);
+  const [comments, setComments] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/sliderImages.json")
+      .then((response) => response.json())
+      .then((data) => setTeams(data))
+      .catch((error) => console.error("Error loading currentus.json:", error));
+
+    fetch("/data/head2head.json")
+      .then((response) => response.json())
+      .then((data) => setHead2head(data))
+      .catch((error) => console.error("Error loading currentus.json:", error));
+
+    fetch("/data/comments.json")
+      .then((response) => response.json())
+      .then((data) => setComments(data))
+      .catch((error) => console.error("Error loading currentus.json:", error));
+  }, []);
+
   return (
     <>
     <div className="preview">

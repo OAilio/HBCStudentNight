@@ -1,0 +1,137 @@
+[
+    {
+      "name": "AKU KUNNARI",
+      "number": 35,
+      "major": "Business",
+      "year": "3rd year",
+      "hometown": "Oulu",
+      "image": "/kunnari.svg",
+      "type": null
+    },
+    {
+      "name": "ANTON SUOMALAINEN",
+      "number": 23,
+      "major": "Business",
+      "year": "3rd year",
+      "hometown": "Espoo",
+      "image": "/missing.svg",
+      "type": "long"
+    },
+    {
+      "name": "ELMO VILLA",
+      "number": 16,
+      "major": "Business",
+      "year": "3rd year",
+      "hometown": "Tuusula",
+      "image": "/villa.svg",
+      "type": null
+    },
+    {
+      "name": "JAAKKO HEINONEN",
+      "number": 5,
+      "major": "Medicine",
+      "year": "1st year",
+      "hometown": "Turku",
+      "image": "/missing.svg",
+      "type": null
+    },
+    {
+      "name": "JOONAS HYÖKYRANTA",
+      "number": 25,
+      "major": "Maritime Mgmt.",
+      "year": "2nd year",
+      "hometown": "Helsinki",
+      "image": "/hyokyranta.svg",
+      "type": "long"
+    },
+    {
+      "name": "JUSSI TAMMINEN",
+      "number": 31,
+      "major": "Automation Tech.",
+      "year": "Nth year",
+      "hometown": "Turku",
+      "image": "/tamminen.svg",
+      "type": null
+    },
+    {
+      "name": "LEEVI NURMI",
+      "number": 6,
+      "major": "Medicine",
+      "year": "6th year",
+      "hometown": "Salo",
+      "image": "/nurmi.svg",
+      "type": null
+    },
+    {
+      "name": "MISKA KUJALA",
+      "number": 2,
+      "major": "Medicine",
+      "year": "6th year",
+      "hometown": "Rovaniemi",
+      "image": "/kujala.svg",
+      "type": null
+    },
+    {
+      "name": "NIILO ANTTILA",
+      "number": 9,
+      "major": "Business Admin.",
+      "year": "3rd year",
+      "hometown": "Helsinki",
+      "image": "/anttila.svg",
+      "type": null
+    },
+    {
+      "name": "OKKO AILIO",
+      "number": 42,
+      "major": "Computer Science",
+      "year": "4th year",
+      "hometown": "Helsinki",
+      "image": "/missing.svg",
+      "type": null
+    },
+    {
+      "name": "ONNI KANKKUNEN",
+      "number": 20,
+      "major": "English",
+      "year": "4th year",
+      "hometown": "Forssa",
+      "image": "/missing.svg",
+      "type": null
+    },
+    {
+      "name": "REKO LAINE",
+      "number": 21,
+      "major": "Business Admin.",
+      "year": "Graduated",
+      "hometown": "Kaarina",
+      "image": "/laine.svg",
+      "type": null
+    },
+    {
+      "name": "ROOPE KYYHKYNEN",
+      "number": 8,
+      "major": "Medicine",
+      "year": "5th year",
+      "hometown": "Turku",
+      "image": "/kyyhkynen.svg",
+      "type": "long"
+    },
+    {
+      "name": "TEEMU JARHIO",
+      "number": 14,
+      "major": "Business",
+      "year": "6th year",
+      "hometown": "Turku",
+      "image": "/missing.svg",
+      "type": null
+    },
+    {
+      "name": "TUOMAS VIRTANEN",
+      "number": 12,
+      "major": "Business",
+      "year": "2nd year",
+      "hometown": "Naantali",
+      "image": "/virtanen.svg",
+      "type": null
+    }
+  ]  

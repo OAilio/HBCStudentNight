@@ -5,10 +5,18 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from "@fortawesome/free-regular-svg-icons";
 import { faSquareInstagram, faSquareXTwitter, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
-import sliderImages from "../data/sliderImages";
+import { useState, useEffect } from "react";
 
 
 const Home = () => {
+  const [sliderImages, setSliderImages] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/sliderImages.json")
+      .then((response) => response.json())
+      .then((data) => setSliderImages(data))
+      .catch((error) => console.error("Error loading currentus.json:", error));
+  }, []);
   return (
     <>
     <Carousel
