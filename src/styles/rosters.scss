@@ -11,7 +11,11 @@
             gap: 1rem;
 
             & .icon {
-                width: 4rem;
+                height: 4rem;
+
+                @media screen and (min-width: 992px) {
+                    height: 6rem;
+                }
             }
         }
 
@@ -70,6 +74,9 @@
     }
 
     & .awayteam {
+        // & .icon {
+        //     // height: 4rem;
+        // }
         .players {
             display: flex;
             flex-direction: column;
