@@ -9,6 +9,10 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+
+            & .icon {
+                width: 4rem;
+            }
         }
 
         & .players {

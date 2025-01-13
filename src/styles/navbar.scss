@@ -72,6 +72,10 @@ nav {
     transition: transform 0.3s ease;
     cursor: pointer;
 
+    & .icon {
+      height: 2.5rem;
+    }
+
     h2 {
         margin-left: 0.5rem;
     }

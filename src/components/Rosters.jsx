@@ -21,7 +21,7 @@ const Rosters = () => {
       <h1>ROSTERS</h1>
       <div className="hometeam">
         <div className="title">
-          <img src={"/currentus.svg"} alt="HBC Currentus logo" className="icon" loading="lazy"/>
+          <img src={"/currentus.png"} alt="HBC Currentus logo" className="icon" loading="lazy"/>
           <h2>HBC CURRENTUS</h2>
         </div>
         <div className="players">

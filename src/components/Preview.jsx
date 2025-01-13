@@ -29,7 +29,7 @@ const Preview = () => {
       <h1>GAME PREVIEW</h1>
       <div className="versus">
         <div className="logo-wrapper">
-          <img src={"/currentus.svg"} alt="TuTo logo" className="icon" loading="lazy"/>
+          <img src={"/currentus.png"} alt="TuTo logo" className="icon" loading="lazy"/>
         </div>
         <span className="vs">VS</span>
         <div className="logo-wrapper">

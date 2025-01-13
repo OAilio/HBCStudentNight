@@ -32,7 +32,7 @@ const Home = () => {
     >
       {sliderImages.map((slide, index) => (
         <div key={index} className="slide">
-          <img src={slide.url} alt="" loading="lazy"/>
+          <img src={slide.url} alt=""/>
           <p className="credit">{slide.credit}</p>
         </div>
       ))}
@@ -91,6 +91,7 @@ const Home = () => {
         <p>Redbull Suomi</p>
         <p>Kloffa Clothing</p>
         <p>Fredrik & Doris</p>
+        <p>DJ PikkuMiska</p>
         <p>KY-Jets</p>
         <p>Functio Laesa</p>
         <p>TuKY-Speksi Dance Team</p>
