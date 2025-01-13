@@ -29,11 +29,11 @@ const Preview = () => {
       <h1>GAME PREVIEW</h1>
       <div className="versus">
         <div className="logo-wrapper">
-          <img src={"/currentus.png"} alt="TuTo logo" className="icon" loading="lazy"/>
+          <img src={"/currentus.webp"} alt="TuTo logo" className="icon" loading="lazy"/>
         </div>
         <span className="vs">VS</span>
         <div className="logo-wrapper">
-          <img src={"/tuto.svg"} alt="TuTo logo" className="icon" loading="lazy"/>
+          <img src={"/tuto.webp"} alt="TuTo logo" className="icon" loading="lazy"/>
         </div>
       </div>
       <div className="form">
@@ -93,7 +93,7 @@ const Preview = () => {
           return (
             <div key={comment.name}>
               <div className="quote">
-                <img className="mark" src="quotations.svg" alt="" loading="lazy"/>
+                <img className="mark" src="quotations.webp" alt="" loading="lazy"/>
                 <q>{comment.quote}</q>
                 <div className="citation">
                   <span className="name">{comment.name}</span>

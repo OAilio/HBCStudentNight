@@ -6,7 +6,7 @@ const AfterParty = () => {
       <h1>STUDENT NIGHT AFTER PARTY</h1>
       <h2>THE AFTER PARTY WILL BE AT NIGHT CLUB DORIS</h2>
       <div className="partyinfo">
-        <a href="https://barfredrik.fi/doris/"><img src={"/doris.svg"} alt="TuTo logo" className="doris" /></a>
+        <a href="https://barfredrik.fi/doris/"><img src={"/doris.webp"} alt="TuTo logo" className="doris" /></a>
         <p>Linnankatu 18, 20100 Turku</p>
         <span>TICKETS 5€*</span>
         <span>DOORS 22.00</span>

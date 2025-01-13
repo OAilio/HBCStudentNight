@@ -14,7 +14,7 @@ function Navbar() {
       <nav>
         <div className="navbar-logo">
           <Link onClick={closeMenu} to="/">
-            <img src={"/hbclogo1.png"} alt="HBC logo" className="icon"/>
+            <img src={"/hbclogo1.webp"} alt="HBC logo" className="icon"/>
             <h2>STUDENT NIGHT</h2>
           </Link>
         </div>

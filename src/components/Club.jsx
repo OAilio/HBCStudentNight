@@ -4,7 +4,7 @@ const Club = () => {
   return (
     <div className="club">
       <h1>HUNKS BASKETBALL CLUB</h1>
-      <img src={"/hbclogo2.svg"} alt="HBC logo" className="icon" loading="lazy"/>
+      <img src={"/hbclogo2.webp"} alt="HBC logo" className="icon" loading="lazy"/>
       <p><b>Hunks Basketball Club ry</b> organizes recreational basketball activities
       in the Turku region and fosters active alumni engagement across borders.
       Our community traces its roots back to 2003 when Turku School of Economics 

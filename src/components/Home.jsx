@@ -48,7 +48,7 @@ const Home = () => {
       </p>
       <section className="cardgrid">
         <Link to="/club" className="card">
-          <img src={"/hbclogo2.svg"} alt="HBC logo" className="icon" loading="lazy"/>
+          <img src={"/hbclogo2.webp"} alt="HBC logo" className="icon" loading="lazy"/>
           <span>THE CLUB</span>
         </Link>
         <Link to="/rosters" className="card" >
