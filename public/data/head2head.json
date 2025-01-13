@@ -1,32 +1,32 @@
 [
     {
-      "home": "/tuto.svg",
+      "home": "/tuto.webp",
       "homealt": "TuTo logo",
-      "away": "/currentus.svg",
+      "away": "/currentus.webp",
       "awayalt": "HBC Currentus logo",
       "score": "74 – 63",
       "date": "18.10.2024"
     },
     {
-      "home": "/currentus.svg",
+      "home": "/currentus.webp",
       "homealt": "HBC Currentus logo",
-      "away": "/tuto.svg",
+      "away": "/tuto.webp",
       "awayalt": "TuTo logo",
       "score": "77 – 75",
       "date": "21.9.2024 (Pre-season friendly)"
     },
     {
-      "home": "/currentus.svg",
+      "home": "/currentus.webp",
       "homealt": "HBC Currentus logo",
-      "away": "/tuto.svg",
+      "away": "/tuto.webp",
       "awayalt": "TuTo logo",
       "score": "80 – 61",
       "date": "18.1.2024 (Student Night 2024)"
     },
     {
-      "home": "/tuto.svg",
+      "home": "/tuto.webp",
       "homealt": "TuTo logo",
-      "away": "/currentus.svg",
+      "away": "/currentus.webp",
       "awayalt": "HBC Currentus logo",
       "score": "72 – 81",
       "date": "11.10.2023"
