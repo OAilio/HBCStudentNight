@@ -5,36 +5,40 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from "@fortawesome/free-regular-svg-icons";
 import { faSquareInstagram, faSquareXTwitter, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
-import { useState, useEffect } from "react";
-
 
 const Home = () => {
-  const [sliderImages, setSliderImages] = useState([]);
-
-  useEffect(() => {
-    fetch("/data/sliderImages.json")
-      .then((response) => response.json())
-      .then((data) => setSliderImages(data))
-      .catch((error) => console.error("Error loading sliderImages.json:", error));
-  }, []);
   return (
     <>
     <Carousel
       className="carousel"
       infiniteLoop={true}
-      interval={4000}
+      interval={3000}
       autoPlay={true}
       showThumbs={false}
       showStatus={false}
       showIndicators={false}
       showArrows={false}
     >
-      {sliderImages.map((slide, index) => (
-        <div key={index} className="slide">
-          <img src={slide.url} alt=""/>
-          <p className="credit">{slide.credit}</p>
-        </div>
-      ))}
+    <div className="slide">
+      <img src="/carousel1.webp" alt=""/>
+      <p className="credit">basketball.kuvat.fi | Harri Vallila</p>
+    </div>
+    <div className="slide">
+      <img src="/carousel2.webp" alt=""/>
+      <p className="credit">@sportsbyanu</p>
+    </div>
+    <div className="slide">
+      <img src="/carousel3.webp" alt=""/>
+      <p className="credit">basketball.kuvat.fi | Harri Vallila</p>
+    </div>
+    <div className="slide">
+      <img src="/carousel4.webp" alt=""/>
+      <p className="credit">@sportsbyanu</p>
+    </div>
+    <div className="slide">
+      <img src="/carousel5.webp" alt=""/>
+      <p className="credit">basketball.kuvat.fi | Harri Vallila</p>
+    </div>
     </Carousel>
     <div className="home">
       <h1>WELCOME TO THE GAME PROGRAMME OF HBC STUDENT NIGHT 2025!</h1>
