@@ -1,0 +1,18 @@
+@use "./_shared" as *;
+
+.notfound {
+    @include mobile-container;
+
+    & h1 {
+        margin-bottom: 2rem;
+    }
+
+    & a {
+        @include text-link;
+        font-family: $regular;
+    }
+
+    & span {
+        margin: 2rem 0rem 40vh;
+    }
+}

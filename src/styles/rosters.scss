@@ -38,6 +38,7 @@
                     display: inline-block;
 
                     & .image {
+                        display: flex;
                         width: 10rem;
                         border-radius: 8px 8px 0px 0px;
                     } 
@@ -48,7 +49,6 @@
                         right: 0;
                         background-color: $primary;
                         color: $white;
-                        margin-bottom: 0.25rem;
                         padding-bottom: 0.5rem;
                         padding-right: 0.5rem;
                         width: 2.5rem;
@@ -74,9 +74,6 @@
     }
 
     & .awayteam {
-        // & .icon {
-        //     // height: 4rem;
-        // }
         .players {
             display: flex;
             flex-direction: column;

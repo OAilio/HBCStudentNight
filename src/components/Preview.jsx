@@ -7,20 +7,27 @@ const Preview = () => {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    fetch("/data/teams.json")
-      .then((response) => response.json())
-      .then((data) => setTeams(data))
-      .catch((error) => console.error("Error loading teams.json:", error));
+    const fetchPreviewData = async () => {
+      try {
+        const [teamsResponse, head2headResponse, commentsResponse] = await Promise.all([
+          fetch("/data/teams.json"),
+          fetch("/data/head2head.json"),
+          fetch("/data/comments.json")
+        ]);
 
-    fetch("/data/head2head.json")
-      .then((response) => response.json())
-      .then((data) => setHead2head(data))
-      .catch((error) => console.error("Error loading head2head.json:", error));
+        const teamsData = await teamsResponse.json();
+        const head2headData = await head2headResponse.json();
+        const commentsData = await commentsResponse.json();
 
-    fetch("/data/comments.json")
-      .then((response) => response.json())
-      .then((data) => setComments(data))
-      .catch((error) => console.error("Error loading comments.json:", error));
+        setTeams(teamsData);
+        setHead2head(head2headData);
+        setComments(commentsData);
+      } catch (error) {
+        console.error("Error loading rosters:", error);
+      }
+    };
+
+    fetchPreviewData();
   }, []);
 
   return (

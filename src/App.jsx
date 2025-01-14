@@ -7,10 +7,7 @@ import Rosters from './components/Rosters';
 import Preview from './components/Preview';
 import AfterParty from './components/AfterParty';
 import Footer from './components/Footer';
-
-function NotFound() {
-  return <h1 style={{ margin: '6rem 0rem', height: '100rem' }}>404 - Page Not Found</h1>;
-}
+import NotFound from './components/NotFound';
 
 function App() {
   return (

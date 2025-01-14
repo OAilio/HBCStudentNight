@@ -6,16 +6,26 @@ const Rosters = () => {
   const [awayRoster, setAwayRoster] = useState([]);
 
   useEffect(() => {
-    fetch("/data/homeRoster.json")
-      .then((response) => response.json())
-      .then((data) => setHomeRoster(data))
-      .catch((error) => console.error("Error loading homeRoster.json:", error));
-    
-    fetch("/data/awayRoster.json")
-      .then((response) => response.json())
-      .then((data) => setAwayRoster(data))
-      .catch((error) => console.error("Error loading homeRoster.json:", error));
+    const fetchRosters = async () => {
+      try {
+        const [homeResponse, awayResponse] = await Promise.all([
+          fetch("/data/homeRoster.json"),
+          fetch("/data/awayRoster.json"),
+        ]);
+
+        const homeData = await homeResponse.json();
+        const awayData = await awayResponse.json();
+
+        setHomeRoster(homeData);
+        setAwayRoster(awayData);
+      } catch (error) {
+        console.error("Error loading rosters:", error);
+      }
+    };
+
+    fetchRosters();
   }, []);
+
   return (
     <div className="rosters">
       <h1>ROSTERS</h1>

@@ -28,7 +28,6 @@ const Home = () => {
       showStatus={false}
       showIndicators={false}
       showArrows={false}
-      swipeable
     >
       {sliderImages.map((slide, index) => (
         <div key={index} className="slide">
