@@ -14,7 +14,7 @@
       "major": "Business",
       "year": "3rd year",
       "hometown": "Espoo",
-      "image": "/missing.webp",
+      "image": "/suomalainen.webp",
       "type": "long"
     },
     {
@@ -32,7 +32,7 @@
       "major": "Medicine",
       "year": "1st year",
       "hometown": "Turku",
-      "image": "/missing.webp",
+      "image": "/heinonen.webp",
       "type": null
     },
     {
@@ -86,7 +86,7 @@
       "major": "Computer Science",
       "year": "4th year",
       "hometown": "Helsinki",
-      "image": "/missing.webp",
+      "image": "/ailio.webp",
       "type": null
     },
     {
@@ -95,7 +95,7 @@
       "major": "English",
       "year": "4th year",
       "hometown": "Forssa",
-      "image": "/missing.webp",
+      "image": "/kankkunen.webp",
       "type": null
     },
     {

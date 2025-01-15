@@ -71,13 +71,13 @@ const Home = () => {
     <div className="socials">
       <h2>FOLLOW US ON SOCIALS!</h2>
       <div className="icons">
-        <a href="https://www.instagram.com/hunksbasketball/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/hunksbasketball/" target="_blank" rel="noopener noreferrer" aria-label="Visit Hunks Basketball Club's Instagram">
           <FontAwesomeIcon icon={faSquareInstagram}/>
         </a>
-        <a href="https://twitter.com/HunksBasketball" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/HunksBasketball" target="_blank" rel="noopener noreferrer" aria-label="Visit Hunks Basketball Club's X/Twitter">
           <FontAwesomeIcon icon={faSquareXTwitter}/>
         </a> 
-        <a href="https://www.youtube.com/@HunksBasketball/featured" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/@HunksBasketball/featured" target="_blank" rel="noopener noreferrer" aria-label="Visit Hunks Basketball Club's YouTube channel">
           <FontAwesomeIcon icon={faSquareYoutube}/>
         </a>        
       </div>

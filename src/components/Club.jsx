@@ -14,7 +14,7 @@ const Club = () => {
       was established to continue our activities.
       <br/><br/>
       The flagship teams of Hunks Basketball Club are our student teams Currentus (men) and Shooters
-      (women, IG @<a href="https://www.instagram.com/hbcshooters">hbcshooters</a>),
+      (women, IG @<a href="https://www.instagram.com/hbcshooters" aria-label="Visit HBC Shooters' Instagram">hbcshooters</a>),
       which recruit new members every fall from students arriving in Turku. 
       These teams combine the student lifestyle with the passion to play basketball 
       at the highest local level.

@@ -91,7 +91,8 @@ const Preview = () => {
           );
         })}
         <p className="more">For more results & full standings table, check out
-          <a href="https://tulospalvelu.basket.fi/category/36!lankp2425/group/301687">basket.fi</a>.
+          <a href="https://tulospalvelu.basket.fi/category/36!lankp2425/group/301687"
+          aria-label="Visit the series' site on Basketball Finland website">basket.fi</a>.
         </p>
     </div>
     <div className="comments">
