@@ -18,7 +18,7 @@ const AfterParty = () => {
           </iframe>
         </div>    
       </div>
-      <p className="info">*If bought at the bar door. The game ticket includes the after party entry. (Cloak room fee separate)</p>
+      <p className="info">*If bought at the bar door. The game ticket includes the after party entry. (Cloakroom fee separate)</p>
     </div>
   )
 };
